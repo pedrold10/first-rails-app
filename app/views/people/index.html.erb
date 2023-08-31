@@ -1,0 +1,13 @@
+<h1>People#index</h1>
+<h1><%= @nome %></h1>
+<h1><%= @numeros %></h1>
+<% soma=0 %>
+<% contador = 0%>
+<% for num in @numeros %>
+    <%= num %>
+    <% soma+=num%>
+    <% contador+=1%>
+    <br>
+<% end %>
+
+<p>Média: <%= soma/contador %></p>
